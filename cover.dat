@@ -1,0 +1,23 @@
+/*********************************************
+ * OPL 20.1.0.0 Data
+ * Author: user
+ * Creation Date: 2023. 6. 12. at ¿ÀÈÄ 6:11:07
+ *********************************************/
+ 
+ isize = 305;
+ jsize = 36;
+ P = 18;
+ S1 = 160;
+ S2 = 100;
+ 
+ SheetConnection excelsheet("seonhak3.xlsx");
+ d from SheetRead(excelsheet, "d!A1:AJ305");
+ w from SheetRead(excelsheet, "w!A1:AJ305");
+ fh from SheetRead(excelsheet, "fh!A1:A305");
+ sh from SheetRead(excelsheet, "sh!A1:A305");
+ 
+ x to SheetWrite(excelsheet, "z!E1:E36");
+ y to SheetWrite(excelsheet, "y!A1:AJ305");
+ u to SheetWrite(excelsheet, "u!A1:AJ305");
+ z1 to SheetWrite(excelsheet, "z!A1:A305");
+ z2 to SheetWrite(excelsheet, "z!C1:C305"); 
